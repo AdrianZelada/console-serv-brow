@@ -1,0 +1,30 @@
+{
+  "name": "console-serv-brow",
+  "version": "1.0.0",
+  "description": "send consoles for socket to client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianZelada/console-serv-brow.git"
+  },
+  "keywords": [
+    "console",
+    "server"
+  ],
+  "author": "Adrian Zelada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianZelada/console-serv-brow/issues"
+  },
+  "dependencies": {
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "nodejs-dashboard": "^0.3.0",
+    "socket.io": "^1.7.2"
+  }
+  "homepage": "https://github.com/AdrianZelada/console-serv-brow#readme"
+}
