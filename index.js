@@ -32,7 +32,7 @@ var request= {
     };
 
 router.get('/',function (req,res) {
-    res.render('../libConsole/index.ejs')
+    res.render('../node_modules/console-serv-brow/index.ejs');
 });
 
 function _skip (req, res, data){
