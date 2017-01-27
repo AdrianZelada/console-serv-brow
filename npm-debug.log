@@ -1,0 +1,67 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/iZel/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/Users/iZel/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '.',
+1 verbose cli   '-g' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData .
+8 silly fetchDirectoryPackageData .
+9 silly fetchPackageMetaData Error: Failed to parse json
+9 silly fetchPackageMetaData Unexpected token 'h' at 29:4
+9 silly fetchPackageMetaData   "homepage": "https://github.com/AdrianZelada/console-serv-brow#readme"
+9 silly fetchPackageMetaData    ^
+9 silly fetchPackageMetaData     at parseError (/Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+9 silly fetchPackageMetaData     at parseJson (/Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+9 silly fetchPackageMetaData     at /Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+9 silly fetchPackageMetaData     at /Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+9 silly fetchPackageMetaData     at tryToString (fs.js:455:3)
+9 silly fetchPackageMetaData     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
+9 silly fetchPackageMetaData  error for . { Error: Failed to parse json
+9 silly fetchPackageMetaData Unexpected token 'h' at 29:4
+9 silly fetchPackageMetaData   "homepage": "https://github.com/AdrianZelada/console-serv-brow#readme"
+9 silly fetchPackageMetaData    ^
+9 silly fetchPackageMetaData     at parseError (/Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+9 silly fetchPackageMetaData     at parseJson (/Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+9 silly fetchPackageMetaData     at /Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+9 silly fetchPackageMetaData     at /Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+9 silly fetchPackageMetaData     at tryToString (fs.js:455:3)
+9 silly fetchPackageMetaData     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
+9 silly fetchPackageMetaData   code: 'EJSONPARSE',
+9 silly fetchPackageMetaData   file: '/Users/iZel/www/libs/libConsole/libConsole/package.json' }
+10 silly rollbackFailedOptional Starting
+11 silly rollbackFailedOptional Finishing
+12 silly runTopLevelLifecycles Finishing
+13 silly install printInstalled
+14 verbose stack Error: Failed to parse json
+14 verbose stack Unexpected token 'h' at 29:4
+14 verbose stack   "homepage": "https://github.com/AdrianZelada/console-serv-brow#readme"
+14 verbose stack    ^
+14 verbose stack     at parseError (/Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+14 verbose stack     at parseJson (/Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+14 verbose stack     at /Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+14 verbose stack     at /Users/iZel/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+14 verbose stack     at tryToString (fs.js:455:3)
+14 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
+15 verbose cwd /Users/iZel/www/libs/libConsole/libConsole
+16 error Darwin 16.0.0
+17 error argv "/Users/iZel/.nvm/versions/node/v6.9.1/bin/node" "/Users/iZel/.nvm/versions/node/v6.9.1/bin/npm" "install" "." "-g"
+18 error node v6.9.1
+19 error npm  v3.10.8
+20 error file /Users/iZel/www/libs/libConsole/libConsole/package.json
+21 error code EJSONPARSE
+22 error Failed to parse json
+22 error Unexpected token 'h' at 29:4
+22 error   "homepage": "https://github.com/AdrianZelada/console-serv-brow#readme"
+22 error    ^
+23 error File: /Users/iZel/www/libs/libConsole/libConsole/package.json
+24 error Failed to parse package.json data.
+24 error package.json must be actual JSON, not just JavaScript.
+24 error
+24 error This is not a bug in npm.
+24 error Tell the package author to fix their package.json file. JSON.parse
+25 verbose exit [ 1, true ]

@@ -25,6 +25,6 @@
     "morgan": "~1.7.0",
     "nodejs-dashboard": "^0.3.0",
     "socket.io": "^1.7.2"
-  }
+  },
   "homepage": "https://github.com/AdrianZelada/console-serv-brow#readme"
 }
