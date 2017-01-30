@@ -10,18 +10,24 @@
     padding: 10px 0 0 2em;
     margin-bottom: 0px;
 }
+.log-header{
+    border:1px solid rgba(0,0,0,0.3)
+}
 .heigth-middle{
     height:300px;
     max-height: 300px;
     overflow-y: auto;
+    border:1px solid rgba(0,0,0,0.3)
 }
 .new-log{
     background: red;
 }
 
-.height-long{
-    max-height: 600px;
+.heigth-long{
+    min-height: 650px;
+    max-height: 700px;
     overflow-y: auto;
+    border:1px solid rgba(0,0,0,0.3)
 }
 
 .content-log{

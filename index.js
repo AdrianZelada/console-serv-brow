@@ -1,14 +1,12 @@
-var http = require('http'),
-    express = require('express'),
-    router = express.Router(),
-
-    io = require('socket.io')(8888);
+var express = require('express'),
+    router = express.Router();
 var path = require('path');
 
-module.exports=function(app, pathRoute, log){
+module.exports=function(app,options){
 
-    var pathRoute = pathRoute ? pathRoute : '/_console';
-    var _console= console ? console : log;
+    var io = require('socket.io')(8888);
+    var pathRoute = options.pathRoute ? options.pathRoute : '/_console';
+    var _console= console ? console : options.log;
 
     _console.info = function () {
         var stack = new Error().stack;

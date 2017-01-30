@@ -79,10 +79,43 @@ angular.module('console').directive('consoleLog',function () {
             requestServer: '='
         },
         controller:function ($scope) {
+            $scope.data={
+                value:{},
+                oldIndex:null,
+                res:''
+            }
             $scope.fn={
                 clear:function () {
                     $scope.requestServer=[];
+                },
+                request:function (val) {
+                    // val = val ? val : {};
+                    // val.value=val;
+                    $scope.data.value=val;
+                },
+                colapse:function (index) {
+                    if($scope.data.oldIndex==index){
+                        $scope.data.oldIndex=null
+                    }else{
+                        $scope.data.oldIndex=index;
+                    }
+                },
+                viewData:function (key,index) {
+                    // $scope.data.res=key;
+                    $scope.data.value={};
+                    if($scope.data.oldIndex==index){
+                        if($scope.data.res==key){
+                            $scope.data.oldIndex=null;
+                            $scope.data.res='';
+                        }else{
+                            $scope.data.res=key;
+                        }
+                    }else{
+                        $scope.data.res=key;
+                        $scope.data.oldIndex=index;
+                    }
                 }
+
             }
         },
         templateUrl:'public/directives/console-request.html'
