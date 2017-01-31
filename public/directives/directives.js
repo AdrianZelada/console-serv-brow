@@ -9,6 +9,10 @@ angular.module('console').directive('consoleLog',function () {
         },
         controller:function ($scope,$element,$attrs) {
             console.log('test')
+
+            $scope.data={
+                method:null
+            }
             $scope.fn= {
                 keysRes: function (obj) {
                     var newObj = {};
@@ -82,16 +86,15 @@ angular.module('console').directive('consoleLog',function () {
             $scope.data={
                 value:{},
                 oldIndex:null,
-                res:''
+                res:'',
+                method:null
             }
             $scope.fn={
                 clear:function () {
                     $scope.requestServer=[];
                 },
                 request:function (val) {
-                    // val = val ? val : {};
-                    // val.value=val;
-                    $scope.data.value=val;
+                    $scope.data.value=val ? val : {};
                 },
                 colapse:function (index) {
                     if($scope.data.oldIndex==index){
@@ -114,6 +117,9 @@ angular.module('console').directive('consoleLog',function () {
                         $scope.data.res=key;
                         $scope.data.oldIndex=index;
                     }
+                },
+                filter:function (filter) {
+                    $scope.data.method=filter=='all' ? null : filter;
                 }
 
             }
