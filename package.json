@@ -1,6 +1,6 @@
 {
   "name": "console-serv-brow",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "send consoles for socket to client",
   "main": "index.js",
   "scripts": {
