@@ -34,4 +34,35 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.col-md-3 > ul > li  {
+    list-style-type: none;
+
+}
+.padding-null{
+    padding: 0px !important;
+}
+
+.btn-response{
+    width:100%;
+    border: none;
+    background: rgba(0,0,0,0.01);
+    text-align: left !important;
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    text-transform: capitalize;
+}
+
+.res-header{
+    font-family: arial;
+    font-size: 11px;
+    white-space: pre-wrap;
+    background: rgba(192,192,192,0.1);
+    border:1px solid rgba(0,0,0,0.03)
+}
+
+.content-json > .angular-json-explorer{
+    background: rgba(0,0,0,0.01);
+}
+
 

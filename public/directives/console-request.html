@@ -14,7 +14,7 @@
             <div class="content-json" >
                 <div class="row">
                     <div class="col-md-9">
-                        <p class="angular-json-explorer not-object"> {{ req.status }} -- {{req.method}} -- {{req.url}} </p>
+                        <p class="res-header not-object"> {{ req.status }} -- {{req.method}} -- {{req.url}} </p>
                     </div>
                     <div class="col-md-3">
                         <div class="btn-group" role="group">
@@ -25,11 +25,11 @@
                 </div>
             </div>
             <div class="content-json" ng-show="data.oldIndex == $index && data.res == 'request'">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul>
-                            <li ng-repeat="(key ,val) in req.request" ng-click="fn.request(val)"> {{key}} </li>
-                        </ul>
+                <div class="col-md-12">
+                    <div class="col-md-3 padding-null">
+                        <button class="btn-response" ng-repeat="(key ,val) in req.request" ng-click="fn.request(val)">
+                            {{key}}
+                        </button>
                     </div>
                     <div class="col-md-9" >
                         <json-explorer class="content-json " data="data.value" collapsed="true""></json-explorer>
@@ -38,11 +38,11 @@
             </div>
 
             <div class="content-json" ng-show="data.oldIndex == $index && data.res == 'response'">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul>
-                            <li> Response </li>
-                        </ul>
+                <div class="col-md-12">
+                    <div class="col-md-3 padding-null">
+                        <button class="btn-response" >
+                            Response
+                        </button>
                     </div>
                     <div class="col-md-9" >
                         <json-explorer class="content-json " data="req.response" collapsed="true""></json-explorer>
